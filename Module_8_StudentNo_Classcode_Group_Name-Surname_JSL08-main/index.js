@@ -44,3 +44,9 @@ getBranchInfo() {
 // - We demonstrate the Singleton pattern by creating two instances (`branchA` and `branchB`) and show that they both point to the same instance,
 //   ensuring that there is only one set of branch information throughout the application.
  
+const branchA = new BankBranch("Main Street Branch");
+console.log(branchA.getBranchInfo());
+
+const branchB = new BankBranch("Second Street Branch");
+
+console.log(branchA === branchB);
